@@ -8,4 +8,18 @@ public class CurrentThread {
             throw new RuntimeException(e);
         }
     }
+
+    public static void loopUntilWithSleep(Runnable runnable, long untilInMillis, long sleepInMillis) {
+        long start = System.currentTimeMillis();
+        while (true) {
+            long elapsed = System.currentTimeMillis() - start;
+            if (elapsed > untilInMillis) {
+                System.out.println(elapsed);
+                break;
+            }
+
+            runnable.run();
+            sleep(sleepInMillis);
+        }
+    }
 }

@@ -11,7 +11,7 @@ public class AnthemTrial {
         private static final long WAIT_FOR_LEADER_TO_START_MILLIS = 2 * 60 * 1_000; // 2 minutes
     private static final int WAIT_FOR_ANTHEM_TRIAL_TO_LOAD = 60 * 1_000; // 1 minute
     private static final long WAIT_FOR_ANTHEM_TRIAL_TO_FINISH = 10 * 60 * 1_000; // 10 minutes
-    private static final int WAIT_FOR_ANTHEM_TRIAL_TO_EXIT = 5 * 1_000; // 5 seconds
+    private static final int WAIT_FOR_ANTHEM_TRIAL_TO_EXIT = 10 * 1_000; // 5 seconds
 
     // after leaving, there is something wrong, it will not restart, just in the starting [position
     public void play() throws TimeoutException {
@@ -33,9 +33,12 @@ public class AnthemTrial {
             // wait for anthem trial menu screen to appear
             // Color = java.awt.Color[r=231,g=52,b=41]
             //Coordinates = java.awt.Point[x=-1286,y=188]
-            InputControl.waitForMultipleColor(1_000, -1286, 188,
+            InputControl.waitForMultipleColor(5_000, 100,
+                    -1286, 188,
                     java.util.List.of(
-                            new Color(231, 52, 41)));
+                            new Color(231, 52, 41),
+                            new Color(29, 31, 42),
+                            new Color(238, 242, 240)));
             clickPartyFinderButton();
             clickBecomeLeaderButton();
             clickAutoMatchButton();
@@ -45,7 +48,8 @@ public class AnthemTrial {
             // we wait for the anthem trial menu screen color)
             // Color = java.awt.Color[r=231,g=52,b=41]
             //Coordinates = java.awt.Point[x=-1286,y=188]
-            InputControl.waitForMultipleColor(10 * 60 * 1_000, -1286, 188,
+            InputControl.waitForMultipleColor(10 * 60 * 1_000, 100,
+                    -1286, 188,
                     java.util.List.of(
                             new Color(231, 52, 41)));
 
@@ -57,7 +61,8 @@ public class AnthemTrial {
             //
 
             try {
-                InputControl.waitForMultipleColor(WAIT_FOR_LEADER_TO_START_MILLIS, -855, 741,
+                InputControl.waitForMultipleColor(WAIT_FOR_LEADER_TO_START_MILLIS, 100,
+                        -855, 741,
                         java.util.List.of(
                                 new Color(81, 108, 216),
                                 new Color(82, 109, 215)));
@@ -66,7 +71,7 @@ public class AnthemTrial {
                 InputControl.click(-1828, 557); // click open party
                 try {
                     InputControl.click(-152, 304); // click member tab
-                    InputControl.wait(1_000, -1595, 921, 89, 116, 216); // wait for a leave button to appear
+                    InputControl.wait(1_000, 100, -1595, 921, 89, 116, 216); // wait for a leave button to appear
                     InputControl.click(-1595, 921); // click leave button
                 } catch (TimeoutException e2) {
                     //ignore
@@ -81,6 +86,7 @@ public class AnthemTrial {
             //Coordinates = java.awt.Point[x=-670,y=645]
             InputControl.waitForMultipleColor(
                     WAIT_FOR_ANTHEM_TRIAL_TO_LOAD,
+                    100,
                     -670, 645,
                     List.of(new Color(228, 239, 250))
             );
@@ -92,7 +98,7 @@ public class AnthemTrial {
             //Coordinates = java.awt.Point[x=-969,y=152]
             //Color = java.awt.Color[r=190,g=178,b=189]
             InputControl.holdKey(500, KeyEvent.VK_A);
-            InputControl.holdKey(4_000, KeyEvent.VK_W);
+            InputControl.holdKey(5_500, KeyEvent.VK_W);
 
             // 7. auto button
             // Coordinates = java.awt.Point[x=-224,y=309]
@@ -105,6 +111,7 @@ public class AnthemTrial {
             //Actual 222 106 16
             InputControl.waitForMultipleColor(
                     WAIT_FOR_ANTHEM_TRIAL_TO_FINISH,
+                    100,
                     -991, 403,
                     List.of(new Color(222, 106, 16))
             );
@@ -120,7 +127,7 @@ public class AnthemTrial {
             //Coordinates = java.awt.Point[x=-1610,y=928]
             //Color = java.awt.Color[r=90,g=114,b=215]
             try {
-                InputControl.wait(1_000, -1595, 921, 89, 116, 216); // wait for a leave button to appear
+                InputControl.wait(1_000, 100, -1595, 921, 89, 116, 216); // wait for a leave button to appear
                 InputControl.click(-1595, 921); // click leave button
             } catch (TimeoutException e2) {
                 System.out.println("There is no leave button that have appeared" + e2);
@@ -151,7 +158,7 @@ public class AnthemTrial {
 
     private void clickTheTurningWheelButton() {
         InputControl.click(-670, 645);
-        sleep(13_000);
+        sleep(10_500);
     }
 
     private void clickAgreeButton() {
