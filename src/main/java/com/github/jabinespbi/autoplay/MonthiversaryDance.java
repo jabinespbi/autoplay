@@ -241,7 +241,7 @@ public class MonthiversaryDance {
         //Coordinates = java.awt.Point[x=-1008,y=437]
         //Color = java.awt.Color[r=255,g=252,b=187]
 //        InputControl.waitForMonthiversary(10_000, 0, -1008, 437);
-        sleep(650);
+        sleep(850);
         InputControl.clickWithLessDelay(-1008, 437);
 
         //Coordinates = java.awt.Point[x=-844,y=536]
@@ -441,7 +441,7 @@ public class MonthiversaryDance {
         //Coordinates = java.awt.Point[x=-1012,y=438]
         //Color = java.awt.Color[r=244,g=220,b=116]
 //        InputControl.waitForMonthiversary(10_000, 0, -1012, 438);
-        sleep(1000);
+        sleep(850);
         InputControl.clickWithLessDelay(-1012, 438);
 
         //Coordinates = java.awt.Point[x=-849,y=533]
@@ -489,7 +489,7 @@ public class MonthiversaryDance {
         //Coordinates = java.awt.Point[x=-851,y=279]
         //Color = java.awt.Color[r=255,g=241,b=165]
 //        InputControl.waitForMonthiversary(10_000, 0, -851, 279);
-        sleep(1200);
+        sleep(850);
         InputControl.clickWithLessDelay(-851, 279);
 
         //Coordinates = java.awt.Point[x=-659,y=787]
@@ -611,19 +611,22 @@ public class MonthiversaryDance {
 
         //Coordinates = java.awt.Point[x=-1088,y=772]
         //Color = java.awt.Color[r=255,g=239,b=165]
-        InputControl.waitForMonthiversary(10_000, 0, -1088, 772);
+//        InputControl.waitForMonthiversary(10_000, 0, -1088, 772);
+        sleep(900);
         InputControl.clickWithLessDelay(-1088, 772);
 
 
         //Coordinates = java.awt.Point[x=-942,y=773]
         //Color = java.awt.Color[r=255,g=246,b=163]
-        InputControl.waitForMonthiversary(10_000, 0, -942, 773);
+//        InputControl.waitForMonthiversary(10_000, 0, -942, 773);
+        sleep(900);
         InputControl.clickWithLessDelay(-942, 773);
 
 
         //Coordinates = java.awt.Point[x=-801,y=771]
         //Color = java.awt.Color[r=255,g=242,b=182]
-        InputControl.waitForMonthiversary(10_000, 0, -801, 771);
+//        InputControl.waitForMonthiversary(10_000, 0, -801, 771);
+        sleep(900);
         InputControl.clickWithLessDelay(-801, 771);
 
 
@@ -740,7 +743,7 @@ public class MonthiversaryDance {
         //Coordinates = java.awt.Point[x=-929,y=532]
         //Color = java.awt.Color[r=254,g=250,b=221]
 //        InputControl.waitForMonthiversary(10_000, 0, -929, 532);
-        sleep(600);
+        sleep(850);
         InputControl.clickWithLessDelay(-929, 532);
 
 
@@ -758,7 +761,8 @@ public class MonthiversaryDance {
 
         //Coordinates = java.awt.Point[x=-1007,y=533]
         //Color = java.awt.Color[r=255,g=251,b=194]
-        InputControl.waitForMonthiversary(10_000, 0, -1007, 533);
+//        InputControl.waitForMonthiversary(10_000, 0, -1007, 533);
+        sleep(1000);
         InputControl.clickWithLessDelay(-1007, 533);
 
 
@@ -795,7 +799,8 @@ public class MonthiversaryDance {
 
         //Coordinates = java.awt.Point[x=-849,y=533]
         //Color = java.awt.Color[r=255,g=250,b=198]
-        InputControl.waitForMonthiversary(10_000, 0, -849, 533);
+//        InputControl.waitForMonthiversary(10_000, 0, -849, 533);
+        sleep(750);
         InputControl.clickWithLessDelay(-849, 533);
 
 
@@ -891,13 +896,15 @@ public class MonthiversaryDance {
 
         //Coordinates = java.awt.Point[x=-989,y=438]
         //Color = java.awt.Color[r=246,g=232,b=151]
-        InputControl.waitForMonthiversary(10_000, 0, -1003, 433);
+//        InputControl.waitForMonthiversary(10_000, 0, -1003, 433);
+        sleep(500);
         InputControl.clickWithLessDelay(-989, 438);
 
         //Coordinates = java.awt.Point[x=-847,y=280]
         //Color = java.awt.Color[r=255,g=255,b=182]
         // edit 1
-        InputControl.waitForMonthiversary(10_000, 0, -818, 358);
+//        InputControl.waitForMonthiversary(10_000, 0, -818, 358);
+        sleep(500);
         InputControl.clickWithLessDelay(-856, 267);
 
         //Coordinates = java.awt.Point[x=-1169,y=437]
