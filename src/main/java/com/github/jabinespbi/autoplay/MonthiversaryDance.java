@@ -134,12 +134,12 @@ public class MonthiversaryDance {
         //Coordinates = java.awt.Point[x=-1122,y=563]
         //Color = java.awt.Color[r=254,g=250,b=222]
 //        InputControl.waitForMonthiversary(10_000, 0, -1122, 563);
-        sleep(1000);
+        sleep(750);
         InputControl.clickWithLessDelay(-1122, 563);
 
         //Coordinates = java.awt.Point[x=-994,y=437]
         //Color = java.awt.Color[r=254,g=251,b=216]
-        sleep(850);
+        sleep(1300);
 //        InputControl.waitForMonthiversary(10_000, 0, -994, 437);
         InputControl.clickWithLessDelay(-994, 437);
 
